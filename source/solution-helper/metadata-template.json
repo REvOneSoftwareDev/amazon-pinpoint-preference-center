@@ -1,171 +1,226 @@
 {
-  "TableName": "",
-  "Item":{
-    "projectID": "",
-    "websiteURL": "http://aws.amazon.com",
-    "unsubscribe": {
-      "enabled": true
+ "projectID": "c6fa75cb093446b4aa8486f843493958",
+ "preferenceCenterID": "1",
+ "attributes": [
+  {
+   "description": "If necessary, please correct the spelling of your First name",
+   "id": "firstName",
+   "inputLabel": "First Name",
+   "inputPlaceholder": "",
+   "inputType": "text",
+   "required": true,
+   "serverMask": "required|string"
+  },
+  {
+   "description": "If necessary, please correct the spelling of your Last name",
+   "id": "lastName",
+   "inputLabel": "Last Name",
+   "inputPlaceholder": "",
+   "inputType": "text",
+   "required": true,
+   "serverMask": "required|string"
+  },
+  {
+   "description": "If necessary, how would you like for us to contact you?",
+   "id": "mFrequency",
+   "inputLabel": "Communication Preference",
+   "inputType": "checkbox",
+   "options": [
+    {
+     "label": "Weekly",
+     "selected": false,
+     "value": "Weekly"
     },
-    "categories": [{
-      "name": "Newsletters",
-      "description": "Check out our way cool newsletters!",
-      "publications": [{
-        "name": "Runners Monthly",
-        "description": "<strong>Do you love running?</strong>  If so, you need to subscribe to this great newsletter with all things Running",
-        "id": "runnersMonthly"
-      }, {
-        "name": "The Shoe Collector",
-        "description": "Celebrate all things related to the collecting and storing shoes",
-        "id": "theShoeCollector"
-      }]
-    }, {
-      "name": "Specials & New Arrivals",
-      "description": "Sign up for the best deals and upcoming new seasonal seasonal discounts",
-      "publications": [{
-        "name": "Weekly Specials",
-        "description": "Be one of the first to know about our weekly specials and special discounts",
-        "id": "weeklySpecials"
-      }, {
-        "name": "New Arrivals",
-        "description": "Our inventory changes according to whats available each season.  Sign up to stay informed of all the new arrivals",
-        "id": "newArrivals"
-      }]
-    }],
-    "logoURL": "img/badge.jpg",
-    "attributes": [{
-      "inputLabel": "First Name",
-      "description": "Please enter your First Name",
-      "inputType": "text",
-      "id": "firstName",
-      "required": true,
-      "inputPlaceholder": "Jane",
-      "serverMask": "required|string"
-    }, {
-      "inputLabel": "Last Name",
-      "description": "Please enter your Last Name",
-      "inputType": "text",
-      "id": "lastName",
-      "required": true,
-      "inputPlaceholder": "Doe",
-      "serverMask": "required|string"
-    }, {
-      "inputLabel": "Communication Preference",
-      "options": [{
-        "value": "EMAIL",
-        "selected": false,
-        "label": "Email"
-      }, {
-        "value": "SMS",
-        "selected": false,
-        "label": "SMS"
-      }],
-      "description": "How would you like for us to contact you?",
-      "inputType": "radio",
-      "id": "preferredChannel",
-      "required": false,
-      "serverMask": "alpha"
-    }, {
-      "inputLabel": "Where do you Shop?",
-      "options": [{
-        "value": "",
-        "selected": true,
-        "label": ""
-      }, {
-        "value": "ao",
-        "selected": false,
-        "label": "Always online"
-      }, {
-        "value": "airs",
-        "selected": false,
-        "label": "Always in regular shops"
-      }, {
-        "value": "aoirsap",
-        "selected": false,
-        "label": "As often in regular shops as possible"
-      }, {
-        "value": "uooirs",
-        "selected": false,
-        "label": "Usually online, occasionally in regular shops"
-      }, {
-        "value": "uirsoo",
-        "selected": false,
-        "label": "Usually in regular shops, occasionally online"
-      }],
-      "description": "",
-      "inputType": "select",
-      "id": "shoppingPreference",
-      "required": false,
-      "serverMask": "alpha"
-    }, {
-      "inputLabel": "Favorite Activities",
-      "options": [{
-        "value": "Hiking",
-        "selected": false,
-        "label": "Hiking"
-      }, {
-        "value": "Running",
-        "selected": false,
-        "label": "Running"
-      }, {
-        "value": "Walking",
-        "selected": false,
-        "label": "Walking"
-      }, {
-        "value": "Cycling",
-        "selected": false,
-        "label": "Cycling"
-      }],
-      "description": "What is your favorite outdoor activity?",
-      "inputType": "checkbox",
-      "id": "favoriteActivity",
-      "required": false,
-      "serverMask": "alpha"
-    }],
-    "text": {
-      "inputValidationMessages": {
-        "number": "You can enter only numbers in this field.",
-        "maxChecked": "Maximum {count} options allowed. ",
-        "minLength": "Minimum {count} characters allowed.",
-        "maxSelected": "Maximum {count} selection allowed.",
-        "notEqual": "Fields do not match.",
-        "minChecked": "Please select minimum {count} options.",
-        "minSelected": "Minimum {count} selection allowed.",
-        "different": "Fields cannot be the same as each other.",
-        "creditCard": "Invalid credit card number.",
-        "required": "This field is required.",
-        "email": "Your E-mail address appears to be invalid.",
-        "maxLength": "Maximum {count} characters allowed."
-      },
-      "errorText": "We apologize, but there was an error saving your information.",
-      "pageTitle": "Communication Preferences",
-      "unsubscribeText": "Please Remove me from all Publications",
-      "successText": "Thank you for submitting your information!",
-      "pageDescription": "Please indicate which newsletters and special offers you would like to receive below",
-      "submitButtonText": "Submit",
-      "pageHeader": ""
+    {
+     "label": "Monthly",
+     "selected": false,
+     "value": "Monthly"
+    }
+   ],
+   "required": false,
+   "serverMask": "alpha"
+  },
+  {
+   "description": "Select one location you use the most",
+   "id": "StorePreference",
+   "inputLabel": "Which location do you prefer? ",
+   "inputType": "select",
+   "options": [
+    {
+     "label": "",
+     "selected": true,
+     "value": ""
     },
-    "availableChannels": [{
-      "displayName": "Email",
-      "inputLabel": "Email Address",
-      "description": "This is a tooltip for Email!",
-      "inputType": "email",
-      "id": "EMAIL",
-      "inputMask": "'alias': 'email'",
-      "required": true,
-      "inputPlaceholder": "",
-      "serverMask": "required|email"
-    }, {
-      "displayName": "SMS",
-      "inputLabel": "Mobile Phone Number",
-      "description": "This is a tooltip for SMS!",
-      "inputType": "tel",
-      "id": "SMS",
-      "inputMask": "'mask': '+9{1,12}'",
-      "required": false,
-      "inputPlaceholder": "+12065550199",
-      "serverMask": "required|phoneNumber"
-    }],
-    "description": "Preference center for Accent Athletics",
-    "preferenceCenterID": "default"
+    {
+     "label": "Pickup & Delivery",
+     "selected": false,
+     "value": "PickupDelivery"
+    },
+    {
+     "label": "17th Avenue",
+     "selected": false,
+     "value": "Main"
+    },
+    {
+     "label": "Bankview",
+     "selected": false,
+     "value": "Bankview"
+    },
+    {
+     "label": "Bow Tower",
+     "selected": false,
+     "value": "Bow"
+    },
+    {
+     "label": "Britannia",
+     "selected": false,
+     "value": "Britannia"
+    },
+    {
+     "label": "Canyon Meadows",
+     "selected": false,
+     "value": "Canyon"
+    },
+    {
+     "label": "Garrison",
+     "selected": false,
+     "value": "Garrison"
+    },
+    {
+     "label": "Glenmore",
+     "selected": false,
+     "value": "Glenmore"
+    },
+    {
+     "label": "Inglewood",
+     "selected": false,
+     "value": "Inglewood"
+    },
+    {
+     "label": "Montgomery",
+     "selected": false,
+     "value": "Montgomery"
+    },
+    {
+     "label": "Mission",
+     "selected": false,
+     "value": "Mission"
+    },
+    {
+     "label": "Springbank Hill",
+     "selected": false,
+     "value": "Springbank"
+    },
+    {
+     "label": "Woodlands",
+     "selected": false,
+     "value": "Woodlands"
+    }
+   ],
+   "required": false,
+   "serverMask": "alpha"
+  },
+  {
+   "description": "What service(s) do you use the most?",
+   "id": "PreferredService",
+   "inputLabel": "Preferred Service",
+   "inputType": "checkbox",
+   "options": [
+    {
+     "label": "Dry-Cleaning",
+     "selected": false,
+     "value": "DryCleaning"
+    },
+    {
+     "label": "Laundry",
+     "selected": false,
+     "value": "Laundry"
+    },
+    {
+     "label": "Shoe Cobbler",
+     "selected": false,
+     "value": "ShoeCobbler"
+    },
+    {
+     "label": "Alterations",
+     "selected": false,
+     "value": "Alterations"
+    }
+   ],
+   "required": false,
+   "serverMask": "alpha"
   }
+ ],
+ "availableChannels": [
+  {
+   "description": "If neccessary, you can change you Email address here",
+   "displayName": "Email",
+   "id": "EMAIL",
+   "inputLabel": "Email Address",
+   "inputMask": "'alias': 'email'",
+   "inputPlaceholder": "",
+   "inputType": "email",
+   "required": false,
+   "serverMask": "required|email"
+  },
+  {
+   "description": "If neccessary, you can change you Cell Phone number here (include country and area code)",
+   "displayName": "Text",
+   "id": "SMS",
+   "inputLabel": "Mobile Phone Number",
+   "inputMask": "'mask': '+9{1,12}'",
+   "inputPlaceholder": "+1",
+   "inputType": "tel",
+   "required": false,
+   "serverMask": "required|phoneNumber"
+  }
+ ],
+ "categories": [
+  {
+   "description": "Stay informed and sign up to get the best deals and discounts",
+   "name": "Deals & Discounts",
+   "publications": [
+    {
+     "description": "Be one of the first to know about our best deals and discounts",
+     "id": "mPromotional",
+     "name": "Monthly Deals"
+    },
+    {
+     "description": "Receive service notifications like when you order is ready!",
+     "id": "mTransactional",
+     "name": "Stay Informed"
+    }
+   ]
+  }
+ ],
+ "description": "Preference Center DEV",
+ "hashKey": "a01ff5ea71dd0a6b0ab0bf0e66016392789077e3",
+ "logoURL": "",
+ "text": {
+  "errorText": "We apologize, but there was an error saving your information.",
+  "inputValidationMessages": {
+   "creditCard": "Invalid credit card number.",
+   "different": "Fields cannot be the same as each other.",
+   "email": "Your E-mail address appears to be invalid.",
+   "maxChecked": "Maximum {count} options allowed. ",
+   "maxLength": "Maximum {count} characters allowed.",
+   "maxSelected": "Maximum {count} selection allowed.",
+   "minChecked": "Please select minimum {count} options.",
+   "minLength": "Minimum {count} characters allowed.",
+   "minSelected": "Minimum {count} selection allowed.",
+   "notEqual": "Fields do not match.",
+   "number": "You can enter only numbers in this field.",
+   "required": "This field is required."
+  },
+  "pageDescription": "Please indicate how you would like to stay informed",
+  "pageHeader": "",
+  "pageTitle": "Communication Preferences",
+  "submitButtonText": "Submit",
+  "successText": "Thank you for submitting your information!",
+  "unsubscribeText": "Please Remove me from all Communications"
+ },
+ "unsubscribe": {
+  "enabled": true
+ },
+ "websiteURL": ""
 }
